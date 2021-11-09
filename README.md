@@ -2,7 +2,6 @@
 
 <br/>
 
-
 ## #1. Introduction
 
 ### This tool is designed to perform like an octopus, who can "guess" the winner of football game. Of course, for serious scientific question such as the Origins of COVID-19, "guessing" is not allowed. Instead, it will be based on "objective phylogeny", based on analzying virus genome data from GISAID, in real time. Not everybody can afford to have a real "octopus" in a fish tank, but it is not difficult for anyone to simply download an "OCTOPUS" screensaver. Phylogeny analysis is widely used for COVID-19 research, but only a "usable screensaver" can bring that science to a much broad of audience so that more people could learn and even engage the science of "Origins calculation and tracing".
