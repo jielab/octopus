@@ -1,5 +1,24 @@
 ## OCTOPUS: Origin Computation and Tracing by Objective Phylogeny and Usable Screensaver 
 
+## First, to get an idea on what is Phylogeny, please download from the "data" folder, a testing dataset for 20 SARS-COV-2 genomes from [GISAID](www.gisaid.org). 
+## Then run the following R script:
+```
+library(Biostrings); library(ape)
+fa <- 'D:/data/gisaid/20genome.fa'
+gen0 <- readDNAStringSet(fa, format='fasta')
+gen <- subseq(gen0, start=21563, end=25384) # to extract spike protein region
+gen <- chartr("-","N", replaceAmbiguities(gen0)) # *****
+dist_dna <- ape::dist.dna(ape::as.DNAbin(gen)); 
+plot(hclust(dist_dna))
+tree_nj <- ape::nj(dist_dna)
+plot.phylo(as.phylo(tree_nj), type="radial")
+```
+
+## A Phylogeny tree could also be drawn by using Python, as shown in below:
+> 1. [A basic Python tutorial](https://medium.com/geekculture/phylogenetic-trees-implement-in-python-3f9df96c0c32)
+> 2. [Physcraper: a Python package for continually updated phylogenetic trees using the Open Tree of Life](https://physcraper.readthedocs.io/en/latest/index.html)
+> 3. Also, check out [Usher](https://www.nature.com/articles/s41588-021-00862-7) from UCSC.
+
 <br/>
 
 ## #1. Introduction
